@@ -1,4 +1,4 @@
-- name: Declarative Variales
+- name: Declare Variables
   hosts: all
   vars: 
    URL: google.com
