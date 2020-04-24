@@ -1,8 +1,8 @@
-- name: Declarative Variale
+- name: Declarative Variales
   hosts: all
   vars: 
    URL: google.com
    tasks:
-   - name: print url
+   - name: print URL
      debug:
        msg: 'URL = {{URL}}' 
