@@ -6,3 +6,10 @@
     - name: Print URL 
       debug:
         msg: "URL = {{URL}}"
+
+## Some variables declared at task level will override play varibles at that task.
+- name: Print variable from task
+  debug:
+    msg:  "URL = {{URL}}"
+  vars:
+    URL: tasks.google.com
