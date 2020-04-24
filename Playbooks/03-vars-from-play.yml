@@ -1,8 +1,8 @@
 - name: Declare Variables
   hosts: all
-  vars: 
-   URL: google.com
+   vars: 
+      URL: google.com
    tasks:
-   - name: Print URL
-     debug:
-       msg: "URL = {{URL}}"
+     - name: Print URL
+        debug:
+          msg: "URL = {{URL}}"
