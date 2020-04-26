@@ -1,0 +1,18 @@
+## Tags are used to run particular tasks
+
+- name: Demo on Tags
+  hosts: all
+  tasks:
+   
+    - debug:
+        msg: "web installation"
+      tags: 
+         - web
+         - httpd
+         - nginx
+    - debug: 
+        msg: "App installation"
+      tags: 
+         - app
+         - tomcat             
+
