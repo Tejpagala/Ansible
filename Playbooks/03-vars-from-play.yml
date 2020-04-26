@@ -15,3 +15,11 @@
     vars:
      URL: tasks.google.com
     name: Print variable from task
+
+
+
+### Variable priority list
+
+# 1. Variable passed from cli
+# 2. Local variables
+# 3. Global variables
