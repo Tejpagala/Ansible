@@ -9,3 +9,14 @@
         - john
         - Teja
         - Pt
+
+
+### to check the user
+
+- name: Check the user
+  hosts: all
+  tasks:
+    - shell: id
+      register: out
+    - debug:
+        msg: "{{out.stdout}}"
