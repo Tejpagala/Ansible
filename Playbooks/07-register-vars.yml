@@ -5,6 +5,6 @@
      shell: hostname
      register: OUT
 
-     - name: Print OUT variable
+   - name: Print OUT variable
         debug: 
-          msg: "{{OUT.stdout}}"
+          msg: "{{OUT}}"
