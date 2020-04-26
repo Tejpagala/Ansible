@@ -1,0 +1,9 @@
+- name: Demo on ignore errors
+  hosts: all
+  tasks:
+   - name: check file exists or not
+     shell: ls -ld /etc1
+     register: out
+   - name: Print out previous shell command
+     debug: 
+       msg: "Exit status = {{out.rc}}"
