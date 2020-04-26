@@ -1,0 +1,17 @@
+- name: Demo on when condition statement
+  hosts: all
+  tasks:
+    - name: Execute shell command
+      shell: ls -ld /etc1
+      register: out
+      ignore_errors: yes
+
+    - name: Print SUCCESS when condition is true
+      debug: 
+        msg: "Command SUCCESS"
+        when: rc == 0
+
+    - name: Print Failure when condition is false
+      debug:
+        msg: "Command FAILURE"
+        when: rc != 0
