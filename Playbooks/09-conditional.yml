@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Execute shell command
-      shell: ls -ld /etc1
+      shell: ls -ld /etc
       register: out
       ignore_errors: yes
 
