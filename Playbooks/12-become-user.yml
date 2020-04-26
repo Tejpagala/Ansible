@@ -4,5 +4,5 @@
    - name: Get the Id
      shell: id
      register: out
-   - demo:
-      msg: "{{out.stdout}}"
+   - debug:
+       msg: "{{out.stdout}}"
