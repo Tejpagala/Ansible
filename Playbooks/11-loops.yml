@@ -1,0 +1,11 @@
+- name: Demo on loops concept
+  hosts: all
+  tasks:
+
+   - name: Demo on loop
+     debug: 
+       msg: "Hello, {{ item }}"
+     loops:
+        - john
+        - Teja
+        - Pt
