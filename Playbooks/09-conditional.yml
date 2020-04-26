@@ -6,12 +6,12 @@
       register: out
       ignore_errors: yes
 
-    - name: Print SUCCESS when condition is true
+    - name: Print SUCCESS Message
       debug: 
-        msg: "Command SUCCESS"
-        when: out.rc == 0
+        msg: "Command was SUCCESS"
+      when: out.rc == 0
 
-    - name: Print Failure when condition is false
+    - name: Print Failure Message
       debug:
-        msg: "Command FAILURE"
-        when: out.rc != 0
+        msg: "Command was FAILURE"
+      when: out.rc != 0
