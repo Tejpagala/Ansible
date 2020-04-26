@@ -16,3 +16,4 @@
          - app
          - tomcat             
 
+## We can run this command as ansible-playbook Playbooks/10-tags.yml -t web
