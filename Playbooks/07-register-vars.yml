@@ -1,0 +1,10 @@
+- name: Declare variables from tasks (Register Variables)
+  hosts: all
+  tasks:
+   - name: Run some shell command
+     shell: hostname
+     register: OUT
+
+    - name: Print OUT variable
+      debug: 
+        msg: "{{OUT.stdout}}"
