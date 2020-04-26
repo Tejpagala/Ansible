@@ -1,1 +1,1 @@
-Hello World to "{{out.stdout}}"
+Hello World to {{ansible_hostname}}
