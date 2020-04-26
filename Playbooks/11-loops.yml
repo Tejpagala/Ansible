@@ -5,7 +5,7 @@
    - name: Demo on loop
      debug: 
        msg: "Hello, {{ item }}"
-     loops:
+     loop:
         - john
         - Teja
         - Pt
