@@ -1,0 +1,7 @@
+- name: Demo on using template
+  hosts: all
+  tasks:
+   - name: copy a file to remote node
+     template:
+          src: sample.txt
+          dest: /tmp/sample.txt
