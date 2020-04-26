@@ -9,9 +9,9 @@
     - name: Print SUCCESS when condition is true
       debug: 
         msg: "Command SUCCESS"
-        when: rc == 0
+        when: out.rc == 0
 
     - name: Print Failure when condition is false
       debug:
         msg: "Command FAILURE"
-        when: rc != 0
+        when: out.rc != 0
