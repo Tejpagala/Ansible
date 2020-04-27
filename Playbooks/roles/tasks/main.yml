@@ -1,0 +1,9 @@
+- name: Install HTTPD server
+  package: 
+    name: httpd
+    state: present
+
+- name: copy proxy config file
+  template: 
+     src: proxy.conf
+     dest: /etc/httpd/conf.d/proxy.conf  
