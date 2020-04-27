@@ -4,6 +4,6 @@
   tasks:
    - name: Change listen port on httpd from 80 to 8080
      lineinfile:
-    path: /etc/httpd/conf/httpd.conf
-    regexp: '^Listen'
-    line: Listen 8080
+     path: /etc/httpd/conf/httpd.conf
+     regexp: '^Listen'
+     line: Listen 8080
