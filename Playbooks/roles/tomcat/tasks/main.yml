@@ -2,3 +2,14 @@
   user:
     name: "{{APPUSER}}"
 
+- name: Print
+  debug:
+    msg: "{{TOMCAT_URL}}"
+
+- name: Download Tomcat
+  unarchive:
+       src: "{{TOMCAT_URL}}"
+       dest: "{{APPHOME}}"
+       remote_src: yes
+  become_user: "{{APPUSER}}"
+
