@@ -3,8 +3,8 @@
     name: "{{APPUSER}}"
 
 - name: Print the tomcat url
-   debug:
-     msg: "{{TOMCAT_URL}}"
+  debug:
+    msg: "{{ TOMCAT_URL }}"
 
 - name: Download Tomcat
   unarchive:
