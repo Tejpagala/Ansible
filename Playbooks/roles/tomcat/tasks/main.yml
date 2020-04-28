@@ -2,9 +2,9 @@
   user:
     name: "{{APPUSER}}"
 
-- name: Print
-  debug:
-    msg: "{{TOMCAT_URL}}"
+- name: Print the tomcat url
+   debug:
+     msg: "{{TOMCAT_URL}}"
 
 - name: Download Tomcat
   unarchive:
