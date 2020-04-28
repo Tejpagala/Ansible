@@ -2,11 +2,11 @@
   user:
     name: "{{APPUSER}}"
 
- - name: Print
+- name: Print
    debug:
     msg: "{{TOMCAT_URL}}"
 
- -  name: Download Tomcat
+-  name: Download Tomcat
     unarchive:
        src: "{{TOMCAT_URL}}"
        dest: "{{APPHOME}}"
