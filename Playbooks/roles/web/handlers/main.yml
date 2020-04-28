@@ -1,4 +1,4 @@
-- name: restart HTTPD
+- name: Restart HTTPD
   service:
    name: httpd
    state: restarted

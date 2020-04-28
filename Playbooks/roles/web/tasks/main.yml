@@ -2,19 +2,19 @@
   package: 
     name: httpd
     state: present
-    notify: restart HTTPD
+  notify: Restart HTTPD
 
 - name: copy proxy config file
   template: 
      src: proxy.conf
      dest: /etc/httpd/conf.d/proxy.conf  
-     notify: restart HTTPD
+  notify: Restart HTTPD
 
 - name: Download index html page from web
   get_url:
       url: "{{INDEX_URL}}"
       dest: /var/www/html/index.html
-      notify: restart HTTPD
+  notify: Restart HTTPD
 
 - name: Start and enable httpd service
   service:
